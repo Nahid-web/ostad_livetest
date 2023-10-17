@@ -64,6 +64,14 @@ class _HomePageState extends State<HomePage> {
               builder: (context) {
                 return AlertDialog(
                   title: Text('Selected Items'),
+                  content: Text('You seletec $count itmes'),
+                  actions: [
+                    ElevatedButton(
+                        onPressed: (){
+                          Navigator.pop(context);
+                        },
+                        child: Text('Close'),),
+                  ],
                 );
               },);
         },
